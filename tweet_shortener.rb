@@ -50,4 +50,5 @@ def shortened_tweet_truncator(tweet)
     return chirp
   else
     return chirp
+  end
 end
