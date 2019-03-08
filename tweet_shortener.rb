@@ -30,7 +30,8 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweets)
-  i=0
   tweets.map do |twit|
-    word_substituter(twit)
+    chirp=word_substituter(twit)
+    puts chirp
+  end
 end
