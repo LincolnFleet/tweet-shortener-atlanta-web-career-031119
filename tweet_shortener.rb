@@ -45,9 +45,8 @@ end
 
 def shortened_tweet_truncator(tweet)
   chirp=selective_tweet_shortener(tweet)
-  chars=chirp.length
-  if chars>140
-    chirp[137..chars].replace "..."
+  if chirp.length>140
+    bawk=chirp[0..137]+"..."
     binding.pry
     return bawk
   else
