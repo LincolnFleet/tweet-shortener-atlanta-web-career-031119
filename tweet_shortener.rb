@@ -28,3 +28,6 @@ def word_substituter(tweet)
   tweet=tweet_pieces.join(" ")
   return tweet
 end
+
+def bulk_tweet_shortener(tweet)
+end
