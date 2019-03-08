@@ -46,7 +46,6 @@ end
 def shortened_tweet_truncator(tweet)
   chirp=selective_tweet_shortener(tweet)
   chars=chirp.length
-  binding.pry
   if chars>140
     chirp[137..chars].replace "..."
     return chirp
